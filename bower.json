@@ -1,0 +1,22 @@
+{
+  "name": "Hyundai Website",
+  "homepage": "https://github.com/wheredidjupark/ipix-assessment",
+  "authors": [
+    "Ju Hyeon Park <wheredidjupark@gmail.com>"
+  ],
+  "description": "Hyundai Website for Ipix & Magnum Vint Code Assessment",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6"
+  }
+}
