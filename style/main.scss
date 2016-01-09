@@ -1,0 +1,68 @@
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+    text-align: center;
+}
+
+.social {
+    a {
+        color: black;
+    }
+}
+
+.copyright {
+	color: rgb(154,154,154);
+	font-size: 15px;
+}
+.legals {
+    li {
+        &:hover {
+            color: rgb(0, 117, 201);
+            text-decoration: none;
+        }
+    }
+    color: rgb(0, 117, 201);
+}
+
+// Icons
+.icon {
+    display: inline-block;
+    position: relative;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    background: url(../icons/social_icons_transp.svg) no-repeat;
+}
+
+.facebook {
+	@extend .icon;
+    
+    background-position:-30px -180px;
+}
+
+.twitter {
+	@extend .icon;
+    background-position: -30px 0;
+}
+
+.instagram{
+	@extend .icon;
+
+	background-position:-30px -840px;
+}
+
+.youtube {
+	@extend .icon;
+
+    background-position: -30px -360px;
+}
+
+.google-plus {
+    @extend .icon;
+    background-position: -30px -270px;
+}
