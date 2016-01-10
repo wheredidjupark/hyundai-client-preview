@@ -6,6 +6,9 @@
     margin: 0; }
   .navigation .navbar-collapse {
     padding: 0; }
+  .navigation img {
+    height: 90px;
+    width: auto; }
 
 .container-fluid.slider {
   padding: 0; }
