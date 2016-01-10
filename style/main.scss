@@ -1,17 +1,59 @@
+.hamburger-menu {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    div {
+        padding: 0;
+    }
+    background-color:rgb(242, 242, 242);
+    .menu-logo {
+        cursor: pointer;
+    }
+    .delete-button {
+        cursor: pointer;
+    }
+    img {
+        height: 90px;
+        width: auto;
+    }
+    .submenu-title {
+        text-align: center;
+        p {
+            margin: 0 auto;
+            width: 70%;
+            border-bottom: 2px solid rgb(190, 190, 190);
+        }
+        margin-bottom: 10px;
+    }
+    .category {
+        text-align: center;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+    .menu-end {
+    	.delete-button {
+    		display: block;
+            margin: 0 auto;
+    	}
+    }
+}
+
 .navigation {
+    position: relative;
+    z-index: 1;
     padding: 0;
-    .container-fluid{
-    	padding: 0;
+    .container-fluid {
+        padding: 0;
     }
     .navbar {
-    	margin: 0;
+        margin: 0;
     }
-    .navbar-collapse{
-    	padding: 0;
+    .navbar-collapse {
+        padding: 0;
     }
-    img{
-    	height: 90px;
-    	width: auto;
+    img {
+        height: 90px;
+        width: auto;
     }
 }
 
@@ -140,7 +182,6 @@
 }
 
 .vehicle {
-
     padding: 10px 0;
     .model-name {
         color: rgb(0, 85, 184);
