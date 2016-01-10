@@ -1,32 +1,207 @@
+.navigation {
+    padding: 0;
+    .container-fluid{
+    	padding: 0;
+    }
+    .navbar {
+    	margin: 0;
+    }
+    .navbar-collapse{
+    	padding: 0;
+    }
+}
+
+.container-fluid.slider {
+    padding: 0;
+}
+
+#myCarousel {
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-indicators {
+        position: absolute;
+        top: 10px;
+        left: 89%;
+        li {
+            width: 15px;
+            height: 15px;
+            margin: 3px;
+            background-color: #bbb;
+            &.active {
+                background-color: rgb(0, 75, 141);
+            }
+        }
+    }
+    .carousel-caption {
+        z-index: 1;
+        .carousel-veloster {
+            font-size: 18px;
+            color: #fff;
+            padding: 15px 35px;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            &:hover {
+                text-decoration: none;
+                background-color: #eee;
+                color: rgb(0, 71, 141);
+                cursor: pointer;
+            }
+        }
+        .carousel-sonata-2 {
+            font-size: 18px;
+            color: #fff;
+            padding: 15px 35px;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            &:hover {
+                text-decoration: none;
+                background-color: #eee;
+                color: rgb(0, 71, 141);
+                cursor: pointer;
+            }
+        }
+        .carousel-tucson {
+            font-size: 18px;
+            color: #fff;
+            padding: 15px 35px;
+            border-radius: 50px;
+            background-color: rgb(14, 77, 150);
+            &:hover {
+                text-decoration: none;
+                background-color: #fff;
+                color: rgb(14, 77, 150);
+                cursor: pointer;
+            }
+        }
+        .carousel-sonata {
+            font-size: 18px;
+            color: #fff;
+            padding: 15px 35px;
+            border-radius: 50px;
+            background-color: rgb(14, 77, 150);
+            &:hover {
+                text-decoration: none;
+                background-color: #fff;
+                color: rgb(14, 77, 150);
+                cursor: pointer;
+            }
+        }
+    }
+    .item {
+        @media screen and (min-width: 992px) {
+            height: 650px;
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            height: 500px;
+        }
+        @media screen and (max-width: 767px) and (min-width:600px) {
+            min-height: 350px;
+        }
+        @media screen and (max-width: 599px) {
+            height: 250px;
+        }
+        background-color: #555;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            // min-height: 400px;
+        }
+    }
+}
+
 .sedans,
 .crossovers {
     padding: 0;
 }
 
-.vehicle {
+.banner {
+    margin: 0 auto;
+    .banner-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
-	img {
-		@media screen and (min-width: 1200px){
-			width: 100%;
-			height: 200px;
-		}
-		@media screen and (max-width:1199px) and (min-width:992px){
-			width: 100%;
-			height: 150px;
-		}
-		@media screen and (max-width: 991px) and (min-width: 768px){
-			width: 100%;
-			height: 130px;
-		}
-		@media screen and (max-width: 767px) and (min-width: 600px){
-			width: 250px;
-			height: 180px;
-		}
-		@media screen and (max-width: 599px){
-			width: 100%;
-			height: 180px;
-		}
-	}
+.lineup-title {
+    color: rgb(128, 128, 128);
+    font-size: 30px;
+    margin: 75px 0 20px 20px;
+    font-family: Arial;
+}
+
+.vehicle {
+    @media screen and (min-width: 1200px) {
+        .car-img {
+            width: 100%;
+            height: 200px;
+        }
+        .model-name {
+            font-size: 26px;
+        }
+        .price {
+            font-size: 18px;
+        }
+    }
+    @media screen and (min-width:992px) {
+        .car-img {
+            width: 100%;
+            height: 150px;
+        }
+        .model-name {
+            font-size: 22px;
+        }
+        .price {
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        .car-img {
+            width: 100%;
+            height: 130px;
+        }
+        .model-name {
+            font-size: 18px;
+        }
+        .price {
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 767px) and (min-width: 600px) {
+        .car-img {
+            width: 290px;
+            height: 180px;
+        }
+        .model-name {
+            font-size: 26px;
+        }
+        .price {
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width: 599px) {
+        .car-img {
+            width: 100%;
+            height: 180px;
+        }
+        .model-name {
+            font-size: 26px;
+        }
+        .price {
+            font-size: 18px;
+        }
+    }
+    .model-name {
+        color: rgb(0, 85, 184);
+    }
+    .price {
+        color: rgb(0, 45, 115);
+    }
 }
 
 ul {
@@ -40,11 +215,53 @@ ul {
 }
 
 .find-a-dealer {
+    background-color: rgb(0, 75, 141);
+    padding: 5% 0;
+    margin: 40px 0px;
     text-align: center;
+    position: relative;
+    .location {
+        .use-my-location {
+            width: 80%;
+            padding: 10px 0;
+            border: 1px solid #fff;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 16px;
+            &:hover {
+                background-color: #fff;
+                color: rgb(0, 75, 141);
+                cursor: pointer;
+            }
+        }
+        .zip-code {
+            padding: 10px 0 10px 20px;
+            border-radius: 10px;
+        }
+        .go-button {
+            width: 50px;
+            height: 50px;
+            margin: auto auto;
+            border: 1px solid #fff;
+            border-radius: 100%;
+            color: #fff;
+            &:hover {
+                color: rgb(0, 75, 141);
+                background-color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 .shopping-tools {
     text-align: center;
+}
+
+.hyundai-logo-2 {
+    img {
+        margin: 0 auto;
+    }
 }
 
 .social {
@@ -57,7 +274,7 @@ ul {
 
 .copyright {
     color: rgb(154, 154, 154);
-    font-size: 14px;
+    font-size: 18px;
     line-height: 150%;
     margin: 5% 7.5%;
 }
@@ -74,7 +291,7 @@ ul {
             text-decoration: none;
         }
         padding: 0 2%;
-        // font-size?
+        font-size: 18px;
     }
     color: rgb(0, 117, 201);
 }
@@ -115,3 +332,9 @@ ul {
     @extend .icon;
     background-position: -30px -270px;
 }
+
+
+/* Carousel base class */
+
+
+/* Declare heights because of positioning of img element */

@@ -1,27 +1,159 @@
+.navigation {
+  padding: 0; }
+  .navigation .container-fluid {
+    padding: 0; }
+  .navigation .navbar {
+    margin: 0; }
+  .navigation .navbar-collapse {
+    padding: 0; }
+
+.container-fluid.slider {
+  padding: 0; }
+
+#myCarousel {
+  margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+  /* Since positioning the image, we need to help out the caption */ }
+  #myCarousel .carousel-indicators {
+    position: absolute;
+    top: 10px;
+    left: 89%; }
+    #myCarousel .carousel-indicators li {
+      width: 15px;
+      height: 15px;
+      margin: 3px;
+      background-color: #bbb; }
+      #myCarousel .carousel-indicators li.active {
+        background-color: #004b8d; }
+  #myCarousel .carousel-caption {
+    z-index: 1; }
+    #myCarousel .carousel-caption .carousel-veloster {
+      font-size: 18px;
+      color: #fff;
+      padding: 15px 35px;
+      border: 1px solid #fff;
+      border-radius: 50px; }
+      #myCarousel .carousel-caption .carousel-veloster:hover {
+        text-decoration: none;
+        background-color: #eee;
+        color: #00478d;
+        cursor: pointer; }
+    #myCarousel .carousel-caption .carousel-sonata-2 {
+      font-size: 18px;
+      color: #fff;
+      padding: 15px 35px;
+      border: 1px solid #fff;
+      border-radius: 50px; }
+      #myCarousel .carousel-caption .carousel-sonata-2:hover {
+        text-decoration: none;
+        background-color: #eee;
+        color: #00478d;
+        cursor: pointer; }
+    #myCarousel .carousel-caption .carousel-tucson {
+      font-size: 18px;
+      color: #fff;
+      padding: 15px 35px;
+      border-radius: 50px;
+      background-color: #0e4d96; }
+      #myCarousel .carousel-caption .carousel-tucson:hover {
+        text-decoration: none;
+        background-color: #fff;
+        color: #0e4d96;
+        cursor: pointer; }
+    #myCarousel .carousel-caption .carousel-sonata {
+      font-size: 18px;
+      color: #fff;
+      padding: 15px 35px;
+      border-radius: 50px;
+      background-color: #0e4d96; }
+      #myCarousel .carousel-caption .carousel-sonata:hover {
+        text-decoration: none;
+        background-color: #fff;
+        color: #0e4d96;
+        cursor: pointer; }
+  #myCarousel .item {
+    background-color: #555;
+    overflow: hidden; }
+    @media screen and (min-width: 992px) {
+      #myCarousel .item {
+        height: 650px; } }
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      #myCarousel .item {
+        height: 500px; } }
+    @media screen and (max-width: 767px) and (min-width: 600px) {
+      #myCarousel .item {
+        min-height: 350px; } }
+    @media screen and (max-width: 599px) {
+      #myCarousel .item {
+        height: 250px; } }
+    #myCarousel .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; }
+
 .sedans,
 .crossovers {
   padding: 0; }
 
+.banner {
+  margin: 0 auto; }
+  .banner .banner-image {
+    margin-left: auto;
+    margin-right: auto; }
+
+.lineup-title {
+  color: gray;
+  font-size: 30px;
+  margin: 75px 0 20px 20px;
+  font-family: Arial; }
+
 @media screen and (min-width: 1200px) {
-  .vehicle img {
+  .vehicle .car-img {
     width: 100%;
-    height: 200px; } }
-@media screen and (max-width: 1199px) and (min-width: 992px) {
-  .vehicle img {
+    height: 200px; }
+  .vehicle .model-name {
+    font-size: 26px; }
+  .vehicle .price {
+    font-size: 18px; } }
+@media screen and (min-width: 992px) {
+  .vehicle .car-img {
     width: 100%;
-    height: 150px; } }
+    height: 150px; }
+  .vehicle .model-name {
+    font-size: 22px; }
+  .vehicle .price {
+    font-size: 16px; } }
 @media screen and (max-width: 991px) and (min-width: 768px) {
-  .vehicle img {
+  .vehicle .car-img {
     width: 100%;
-    height: 130px; } }
+    height: 130px; }
+  .vehicle .model-name {
+    font-size: 18px; }
+  .vehicle .price {
+    font-size: 16px; } }
 @media screen and (max-width: 767px) and (min-width: 600px) {
-  .vehicle img {
-    width: 250px;
-    height: 180px; } }
+  .vehicle .car-img {
+    width: 290px;
+    height: 180px; }
+  .vehicle .model-name {
+    font-size: 26px; }
+  .vehicle .price {
+    font-size: 18px; } }
 @media screen and (max-width: 599px) {
-  .vehicle img {
+  .vehicle .car-img {
     width: 100%;
-    height: 180px; } }
+    height: 180px; }
+  .vehicle .model-name {
+    font-size: 26px; }
+  .vehicle .price {
+    font-size: 18px; } }
+.vehicle .model-name {
+  color: #0055b8; }
+.vehicle .price {
+  color: #002d73; }
 
 ul {
   padding: 0;
@@ -32,10 +164,42 @@ ul {
     display: inline-block; }
 
 .find-a-dealer {
-  text-align: center; }
+  background-color: #004b8d;
+  padding: 5% 0;
+  margin: 40px 0px;
+  text-align: center;
+  position: relative; }
+  .find-a-dealer .location .use-my-location {
+    width: 80%;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px; }
+    .find-a-dealer .location .use-my-location:hover {
+      background-color: #fff;
+      color: #004b8d;
+      cursor: pointer; }
+  .find-a-dealer .location .zip-code {
+    padding: 10px 0 10px 20px;
+    border-radius: 10px; }
+  .find-a-dealer .location .go-button {
+    width: 50px;
+    height: 50px;
+    margin: auto auto;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    color: #fff; }
+    .find-a-dealer .location .go-button:hover {
+      color: #004b8d;
+      background-color: #fff;
+      cursor: pointer; }
 
 .shopping-tools {
   text-align: center; }
+
+.hyundai-logo-2 img {
+  margin: 0 auto; }
 
 .social {
   margin: 0 auto;
@@ -45,7 +209,7 @@ ul {
 
 .copyright {
   color: #9a9a9a;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 150%;
   margin: 5% 7.5%; }
 
@@ -56,7 +220,8 @@ ul {
 .legals {
   color: #0075c9; }
   .legals li {
-    padding: 0 2%; }
+    padding: 0 2%;
+    font-size: 18px; }
     .legals li:hover {
       color: #0075c9;
       text-decoration: none; }
@@ -85,5 +250,8 @@ ul {
 
 .google-plus {
   background-position: -30px -270px; }
+
+/* Carousel base class */
+/* Declare heights because of positioning of img element */
 
 /*# sourceMappingURL=main.css.map */
