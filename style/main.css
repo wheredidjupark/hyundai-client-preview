@@ -52,15 +52,25 @@
   position: relative;
   overflow: hidden;
   /* Since positioning the image, we need to help out the caption */ }
+  #myCarousel .carousel-button {
+    z-index: 15;
+    position: relative; }
   #myCarousel .carousel-indicators {
+    width: 90px;
+    height: 30px;
+    z-index: 10;
     position: absolute;
     top: 10px;
-    left: 89%; }
+    right: 10px;
+    left: auto; }
     #myCarousel .carousel-indicators li {
+      position: relative;
+      float: left;
       width: 15px;
       height: 15px;
       margin: 3px;
-      background-color: #bbb; }
+      background-color: #bbb;
+      border: none; }
       #myCarousel .carousel-indicators li.active {
         background-color: #004b8d; }
   #myCarousel .carousel-caption {
@@ -133,10 +143,10 @@
   font-family: Arial; }
 
 .vehicle {
-  padding: 10px 0; }
+  padding: 10px 15px; }
   .vehicle .model-name {
     color: #0055b8;
-    font-size: 26px; }
+    font-size: 20px; }
   .vehicle .price {
     color: #002d73;
     font-size: 18px; }
@@ -155,31 +165,47 @@ ul {
   margin: 40px 0px;
   text-align: center;
   position: relative; }
-  .find-a-dealer .location .use-my-location {
-    width: 80%;
-    padding: 10px 0;
-    border: 1px solid #fff;
-    border-radius: 25px;
-    color: #fff;
-    font-size: 16px; }
-    .find-a-dealer .location .use-my-location:hover {
-      background-color: #fff;
-      color: #004b8d;
-      cursor: pointer; }
-  .find-a-dealer .location .zip-code {
-    padding: 10px 0 10px 20px;
-    border-radius: 10px; }
-  .find-a-dealer .location .go-button {
-    width: 50px;
-    height: 50px;
-    margin: auto auto;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    color: #fff; }
-    .find-a-dealer .location .go-button:hover {
-      color: #004b8d;
-      background-color: #fff;
-      cursor: pointer; }
+  .find-a-dealer .location {
+    margin: 0 auto; }
+    .find-a-dealer .location .use-my-location {
+      display: inline-block;
+      width: 25%;
+      padding: 10px 5px;
+      box-sizing: border-box;
+      border: 1px solid #fff;
+      border-radius: 25px;
+      color: #fff;
+      font-size: 14px; }
+      .find-a-dealer .location .use-my-location:hover {
+        background-color: #fff;
+        color: #004b8d;
+        cursor: pointer; }
+    .find-a-dealer .location .zip-code-wrapper {
+      display: inline-block;
+      margin-left: 3%;
+      box-sizing: border-box; }
+      .find-a-dealer .location .zip-code-wrapper .zip-code {
+        display: inline-block;
+        padding: 10px 0 10px 20px;
+        border-radius: 10px; }
+      .find-a-dealer .location .zip-code-wrapper .go-button {
+        display: inline-block;
+        text-align: center;
+        width: 44px;
+        height: 44px;
+        font-size: 15px;
+        padding: 5px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-left: 20px;
+        color: #fff;
+        position: relative;
+        top: -5px; }
+        .find-a-dealer .location .zip-code-wrapper .go-button:hover {
+          color: #004b8d;
+          background-color: #fff;
+          cursor: pointer;
+          text-decoration: none; }
 
 .shopping-tools {
   text-align: center; }
@@ -212,32 +238,45 @@ ul {
       color: #0075c9;
       text-decoration: none; }
 
-.icon, .facebook, .twitter, .instagram, .youtube, .google-plus {
+.icon {
   display: inline-block;
   position: relative;
   text-indent: -9999px;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: auto;
   opacity: 1;
-  background: url(../icons/social_icons_transp.svg) no-repeat;
   margin: 0 5px; }
 
-.facebook {
-  background-position: -30px -180px; }
-
-.twitter {
-  background-position: -30px 0; }
-
-.instagram {
-  background-position: -30px -840px; }
-
-.youtube {
-  background-position: -30px -360px; }
-
-.google-plus {
-  background-position: -30px -270px; }
-
-/* Carousel base class */
-/* Declare heights because of positioning of img element */
+.strike {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 16px; }
+  .strike:before {
+    border-top: 2px solid #bbb;
+    content: "";
+    margin: 0 auto;
+    /* this centers the line to the full width specified */
+    position: absolute;
+    /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 85%;
+    z-index: -1; }
+  .strike .strike-content {
+    color: #bbb;
+    background-color: #fff;
+    display: inline-block;
+    padding: 0 20px; }
+  .strike.strike-color {
+    color: #80a5c6; }
+    .strike.strike-color:before {
+      border-top: 2px solid #80a5c6; }
+    .strike.strike-color .strike-content {
+      color: #80a5c6;
+      background-color: #004b8d; }
 
 /*# sourceMappingURL=main.css.map */

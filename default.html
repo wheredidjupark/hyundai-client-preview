@@ -71,15 +71,15 @@
     <!-- Navigation -->
     <div class="container-fluid navigation">
         <!-- <div class="row"> -->
-            <div class="col-xs-2 nav-logo">
-                <a href="/"><img src="img/hyundai-logo.jpg" alt=""></a>
+        <div class="col-xs-2 nav-logo">
+            <a href="/"><img src="img/hyundai-logo.jpg" alt=""></a>
+        </div>
+        <div class="col-xs-10 nav-menu">
+            <div class="pull-right">
+                <a href="http://abc.com/find-dealer/"><img src="img/nav1.jpg" alt=""></a>
+                <img src="img/nav2.jpg" class="open-menu" alt="">
             </div>
-            <div class="col-xs-10 nav-menu">
-                <div class="pull-right">
-                    <a href="http://abc.com/find-dealer/"><img src="img/nav1.jpg" alt=""></a>
-                    <img src="img/nav2.jpg" class="open-menu" alt="">
-                </div>
-            </div>
+        </div>
         <!-- </div> -->
     </div>
     <div class="container-fluid slider">
@@ -96,7 +96,7 @@
                     <a href="http://www.abc.com/tucson"><img src="img/main-tucson.jpg" class="img-responsive"></a>
                     <div class="container">
                         <div class="carousel-caption">
-                            <p><a href="http://www.abc.com/tucson" class="carousel-tucson">See the new Tucson</a></p>
+                            <p><a href="http://www.abc.com/tucson" class="carousel-button carousel-tucson">See the new Tucson</a></p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                         <img src="img/main-sonata.jpg" class="img-responsive"></a>
                     <div class="container">
                         <div class="carousel-caption">
-                            <p><a href="http://www.abc.com/sonata" class="carousel-sonata">Learn more</a></p>
+                            <p><a href="http://www.abc.com/sonata" class="carousel-button carousel-sonata">Learn more</a></p>
                         </div>
                     </div>
                 </div>
@@ -114,15 +114,15 @@
                         <img src="img/main-sonata-2.jpg" class="img-responsive"></a>
                     <div class="container">
                         <div class="carousel-caption">
-                            <p><a href="http://www.abc.com/sonata-hybrid" class="carousel-sonata-2">See What's New</a></p>
+                            <p><a href="http://www.abc.com/sonata-hybrid" class="carousel-button carousel-sonata-2">See What's New</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <a href="http://www.abc.com/veloster"><img src="img/main-veloster.jpg"></a>
+                    <a href="http://www.abc.com/veloster"><img src="img/main-veloster.jpg" class="img-responsive"></a>
                     <div class="container">
                         <div class="carousel-caption">
-                            <p><a href="http://www.abc.com/veloster" class="carousel-veloster">Veloster Rally Edition</a></p>
+                            <p><a href="http://www.abc.com/veloster" class="carousel-button carousel-veloster">Veloster Rally Edition</a></p>
                         </div>
                     </div>
                 </div>
@@ -282,24 +282,20 @@
     </div>
     </div>
     <div class="find-a-dealer container-fluid">
-        <p class="strike">Find A Dealer</p>
+        <p class="strike strike-color"><span class="strike-content">Find A Dealer</span></p>
         <div class="location container">
-            <div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-3">
-                <div class="use-my-location">Use my Location</div>
-            </div>
-            <div class="col-xs-5 col-sm-5 col-md-2">
+            <div class="use-my-location">Use my Location</div>
+            <div class="zip-code-wrapper">
                 <input class="zip-code" type="text" placeholder="ZIP Code">
-            </div>
-            <div class="col-xs-1 col-sm-1 col-md-1">
                 <a href="https://www.abc.com/find-a-dealer/90001">
-                    <div class="go-button">GO</div>
+                    <div class="go-button"> GO</div>
                 </a>
             </div>
         </div>
     </div>
     <footer class="container-fluid">
         <div class="shopping-tools container-fluid">
-            <p class="strike">Shopping Tools</p>
+            <p class="strike"><span class="strike-content">Shopping Tools</span></p>
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 shopping-tool">
                     <a href="http://abc.com/build-and-price">Build & Price</a>
@@ -335,25 +331,33 @@
         </div>
         <br>
         <div class="social container-fluid">
-            <div class="row">
-                <span class="strike">
+            <div class="strike">
+                <span class="strike-content">
                  	<a href="https://www.facebook.com/abc" alt="Facebook">
-                    	<li class="icon facebook"></li>
+                    	<li class="icon facebook">
+                    		<img src="img/facebook.png" class="img-responsive" alt="">
+                    	</li>
                     </a>
                     <a href="https://www.twitter.com/abc" alt="Twitter">
-                    	<li class="icon twitter"></li>
+                    	<li class="icon twitter">
+                    		<img src="img/twitter.png" class="img-responsive" alt="">
+                    	</li>
                     </a>
                     <a href="https://www.instagram.com/abc" alt="Instagram">
                     	<li class="icon instagram">
+                    	<img src="img/instagram.png" class="img-responsive" alt="">
                     	</li>
                     </a>
                     <a href="https://www.youtube.com/abc" alt="Youtube">
-                    	<li class="icon youtube"></li>
+                    	<li class="icon youtube">
+                    	<img src="img/youtube.png" class="img-responsive" alt="">
+                    	</li>
                     </a>
                     <a href="https://plus.google.com/abc" alt="Google Plus">
                     <li class="icon google-plus">
-                        
+                        <img src="img/google-plus.png" class="img-responsive" alt="">
                     </li></a>
+
                 </span>
             </div>
         </div>

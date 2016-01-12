@@ -70,15 +70,27 @@
     position: relative;
     overflow: hidden;
     /* Since positioning the image, we need to help out the caption */
+    .carousel-button {
+        z-index: 15;
+        position: relative;
+    }
     .carousel-indicators {
+        width: 90px;
+        height: 30px;
+        z-index: 10;
         position: absolute;
         top: 10px;
-        left: 89%;
+        right: 10px;
+        left: auto;
+        // left: 90%;
         li {
+            position: relative;
+            float: left;
             width: 15px;
             height: 15px;
             margin: 3px;
             background-color: #bbb;
+            border: none;
             &.active {
                 background-color: rgb(0, 75, 141);
             }
@@ -140,29 +152,9 @@
         }
     }
     .item {
-        // img {
-        //        position: absolute;
-        //        top: 0;
-        //        left: 0;
-        //        height: 100%;
-        //        width: 100%;
-        //        // min-height: 400px;
-        //    }
-        //    @media screen and (min-width: 992px) {
-        //        height: 650px;
-        //    }
-        //    @media screen and (max-width: 991px) and (min-width: 768px) {
-        //        height: 500px;
-        //    }
-        //    @media screen and (max-width: 767px) and (min-width:600px) {
-        //        min-height: 350px;
-        //    }
-        //    @media screen and (max-width: 599px) {
-        //        height: 250px;
-        //    }
         .img-responsive {
             margin: 0 auto;
-            width:100%;
+            width: 100%;
         }
         background-color: #555;
         overflow: hidden;
@@ -190,10 +182,10 @@
 }
 
 .vehicle {
-    padding: 10px 0;
+    padding: 10px 15px;
     .model-name {
         color: rgb(0, 85, 184);
-        font-size: 26px;
+        font-size: 20px;
     }
     .price {
         color: rgb(0, 45, 115);
@@ -218,34 +210,50 @@ ul {
     text-align: center;
     position: relative;
     .location {
+        margin: 0 auto;
         .use-my-location {
-            width: 80%;
-            padding: 10px 0;
+            display: inline-block;
+            width: 25%;
+            padding: 10px 5px;
+            box-sizing: border-box;
             border: 1px solid #fff;
             border-radius: 25px;
             color: #fff;
-            font-size: 16px;
+            font-size: 14px;
             &:hover {
                 background-color: #fff;
                 color: rgb(0, 75, 141);
                 cursor: pointer;
             }
         }
-        .zip-code {
-            padding: 10px 0 10px 20px;
-            border-radius: 10px;
-        }
-        .go-button {
-            width: 50px;
-            height: 50px;
-            margin: auto auto;
-            border: 1px solid #fff;
-            border-radius: 50%;
-            color: #fff;
-            &:hover {
-                color: rgb(0, 75, 141);
-                background-color: #fff;
-                cursor: pointer;
+        .zip-code-wrapper {
+            display: inline-block;
+            margin-left: 3%;
+            box-sizing: border-box;
+            .zip-code {
+                display: inline-block;
+                padding: 10px 0 10px 20px;
+                border-radius: 10px;
+            }
+            .go-button {
+                display: inline-block;
+                text-align: center;
+                width: 44px;
+                height: 44px;
+                font-size: 15px;
+                padding: 5px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                margin-left: 20px;
+                color: #fff;
+                position: relative;
+                top: -5px;
+                &:hover {
+                    color: rgb(0, 75, 141);
+                    background-color: #fff;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -298,40 +306,72 @@ ul {
     display: inline-block;
     position: relative;
     text-indent: -9999px;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: auto;
     opacity: 1;
-    background: url(../icons/social_icons_transp.svg) no-repeat;
     margin: 0 5px;
 }
 
-.facebook {
-    @extend .icon;
-    background-position: -30px -180px;
+// .strike {
+//     line-height: 1;
+//     text-align: center;
+//     span {
+//         display: inline-block;
+//         position: relative;
+//         &:before{
+//         	right: 100%;
+//         	margin-right: 15px;
+//         }
+//         &:after {
+//         	left: 100%;
+//         	margin-left: 15px;
+//         }
+//     }
+//     &:before,
+//     &:after {
+//         content: "";
+//         position: absolute;
+//         height: 5px;
+//         border-bottom: 1px solid black;
+//         border-top: 1px solid black;
+//         top: 0;
+//         width: 600px;
+//     }
+// }
+.strike {
+    position: relative;
+    z-index: 1;
+    &:before {
+        border-top: 2px solid #bbb;
+        content: "";
+        margin: 0 auto;
+        /* this centers the line to the full width specified */
+        position: absolute;
+        /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 85%;
+        z-index: -1;
+    }
+    .strike-content {
+        color: #bbb;
+        background-color: #fff;
+        display: inline-block;
+        padding: 0 20px;
+    }
+    &.strike-color {
+        &:before {
+            border-top: 2px solid rgb(128, 165, 198);
+        }
+        color: rgb(128, 165, 198); //color
+        .strike-content {
+            color: rgb(128, 165, 198); //color
+            background-color: rgb(0, 75, 141);
+        }
+    }
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 16px;
 }
-
-.twitter {
-    @extend .icon;
-    background-position: -30px 0;
-}
-
-.instagram {
-    @extend .icon;
-    background-position: -30px -840px;
-}
-
-.youtube {
-    @extend .icon;
-    background-position: -30px -360px;
-}
-
-.google-plus {
-    @extend .icon;
-    background-position: -30px -270px;
-}
-
-
-/* Carousel base class */
-
-
-/* Declare heights because of positioning of img element */
