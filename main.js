@@ -27,4 +27,5 @@ $(document).ready(function(){
    $("#myCarousel").swipeleft(function() {
       $(this).carousel('next');
    });
+   $(".ui-loader").remove();
 });

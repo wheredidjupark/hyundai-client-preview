@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <!-- Styles -->
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/main.css">
@@ -36,8 +37,8 @@
                 </div>
                 <div class="col-xs-6 category">
                     <a href="http://www.abc.com/local-offers">
-                		Local Offers
-                	</a>
+                        Local Offers
+                    </a>
                 </div>
                 <div class="col-xs-6 category">
                     <a href="http://www.abc.com/request-a-quote">Request a Quote</a>
@@ -283,13 +284,17 @@
     </div>
     <div class="find-a-dealer container-fluid">
         <p class="strike strike-color"><span class="strike-content">Find A Dealer</span></p>
-        <div class="location container">
-            <div class="use-my-location">Use my Location</div>
-            <div class="zip-code-wrapper">
-                <input class="zip-code" type="text" placeholder="ZIP Code">
-                <a href="https://www.abc.com/find-a-dealer/90001">
-                    <div class="go-button"> GO</div>
-                </a>
+        <div class="location container row">
+            <div class="use-my-location col-xs-offset-2 col-xs-4">Use my Location</div>
+            <div class="zip-code-wrapper col-xs-6">
+                <form class="form-inline">
+                    <div class="form-group row">
+                        <input class="zip-code form-inline col-xs-4" type="text" placeholder="ZIP Code">
+                        <a href="https://www.abc.com/find-a-dealer/90001">
+                            <span class="go-button"> GO</span>
+                        </a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -333,25 +338,25 @@
         <div class="social container-fluid">
             <div class="strike">
                 <span class="strike-content">
-                 	<a href="https://www.facebook.com/abc" alt="Facebook">
-                    	<li class="icon facebook">
-                    		<img src="img/facebook.png" class="img-responsive" alt="">
-                    	</li>
+                    <a href="https://www.facebook.com/abc" alt="Facebook">
+                        <li class="icon facebook">
+                            <img src="img/facebook.png" class="img-responsive" alt="">
+                        </li>
                     </a>
                     <a href="https://www.twitter.com/abc" alt="Twitter">
-                    	<li class="icon twitter">
-                    		<img src="img/twitter.png" class="img-responsive" alt="">
-                    	</li>
+                        <li class="icon twitter">
+                            <img src="img/twitter.png" class="img-responsive" alt="">
+                        </li>
                     </a>
                     <a href="https://www.instagram.com/abc" alt="Instagram">
-                    	<li class="icon instagram">
-                    	<img src="img/instagram.png" class="img-responsive" alt="">
-                    	</li>
+                        <li class="icon instagram">
+                        <img src="img/instagram.png" class="img-responsive" alt="">
+                        </li>
                     </a>
                     <a href="https://www.youtube.com/abc" alt="Youtube">
-                    	<li class="icon youtube">
-                    	<img src="img/youtube.png" class="img-responsive" alt="">
-                    	</li>
+                        <li class="icon youtube">
+                        <img src="img/youtube.png" class="img-responsive" alt="">
+                        </li>
                     </a>
                     <a href="https://plus.google.com/abc" alt="Google Plus">
                     <li class="icon google-plus">
@@ -384,6 +389,7 @@
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> -->
+<script src="jguestures.min.js"></script>
 <script src="main.js"></script>
 
 </html>

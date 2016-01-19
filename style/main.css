@@ -162,7 +162,6 @@ ul {
 .find-a-dealer {
   background-color: #004b8d;
   padding: 5% 0;
-  margin: 40px 0px;
   text-align: center;
   position: relative; }
   .find-a-dealer .location {
@@ -182,7 +181,6 @@ ul {
         cursor: pointer; }
     .find-a-dealer .location .zip-code-wrapper {
       display: inline-block;
-      margin-left: 3%;
       box-sizing: border-box; }
       .find-a-dealer .location .zip-code-wrapper .zip-code {
         display: inline-block;
@@ -242,7 +240,7 @@ ul {
   display: inline-block;
   position: relative;
   text-indent: -9999px;
-  width: 50px;
+  width: 45px;
   height: auto;
   opacity: 1;
   margin: 0 5px; }

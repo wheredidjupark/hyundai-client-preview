@@ -206,7 +206,7 @@ ul {
 .find-a-dealer {
     background-color: rgb(0, 75, 141);
     padding: 5% 0;
-    margin: 40px 0px;
+    // margin: 40px 0px;
     text-align: center;
     position: relative;
     .location {
@@ -228,7 +228,7 @@ ul {
         }
         .zip-code-wrapper {
             display: inline-block;
-            margin-left: 3%;
+            // margin-left: 3%;
             box-sizing: border-box;
             .zip-code {
                 display: inline-block;
@@ -306,38 +306,12 @@ ul {
     display: inline-block;
     position: relative;
     text-indent: -9999px;
-    width: 50px;
+    width: 45px;
     height: auto;
     opacity: 1;
     margin: 0 5px;
 }
 
-// .strike {
-//     line-height: 1;
-//     text-align: center;
-//     span {
-//         display: inline-block;
-//         position: relative;
-//         &:before{
-//         	right: 100%;
-//         	margin-right: 15px;
-//         }
-//         &:after {
-//         	left: 100%;
-//         	margin-left: 15px;
-//         }
-//     }
-//     &:before,
-//     &:after {
-//         content: "";
-//         position: absolute;
-//         height: 5px;
-//         border-bottom: 1px solid black;
-//         border-top: 1px solid black;
-//         top: 0;
-//         width: 600px;
-//     }
-// }
 .strike {
     position: relative;
     z-index: 1;
